@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Duc Toan">
+    <title>exercise 6</title>
+</head>
+
+<body style="background-color: #99cdfd; display: flex; justify-content: center;">
+    <form style="text-align: center; width: 40%; padding: auto;">
+        <img src="../images/logo.png" alt="">
+        <h1>Registration Form</h1>
+        <p>Register your Jackson Electronics product here</p>
+        <table width="100%" >
+            <tr>
+                <th>First Name:</th>
+                <td>
+                    <input type="text" name="firstname" style="width: 120px;">
+                    <b>Last Name:</b>
+                    <input type="text" name="lastname" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>Address#1:</th>
+                <td><input type="text" name="address" style="width: 220px;"></td>
+            </tr>
+            <tr>
+                <th>Address#2:</th>
+                <td><input type="text" name="address2" style="width: 220px;"></td>
+            </tr>
+            <tr>
+                <th>City:</th>
+                <td><input type="text" name="city" style="width: 160px;">
+                    <b>State:</b>
+                    <input type="text" name="state" style="width: 40px;">
+                    <b>Zip:</b>
+                    <input type="text" name="zip" style="width: 60px;">
+                </td>
+            </tr>
+            <tr>
+                <th>Country:</th>
+                <td><input type="text" name="country" style="width: 160px;" value="United States"></td>
+            </tr>
+            
+            
+        </table>
+        <hr>
+        <table width="100%">
+            <tr>
+                <th>Product:</th>
+                <td><select id="product" background-color: #99cdfd; style="width: 140px;">
+                    <option value="ScanMaster">ScanMaster</option>w
+                </select></td>
+            </tr>
+            <tr>
+                <th>Date Purchased:</th>
+                <td><input type="text" name="datepurchased"></td>
+            </tr>
+            <tr>
+                <th>Serial#:</th>
+                <td><input type="text" name="serialnumber"></td>
+            </tr>
+            <tr>
+                <th rowspan="3">Used for:</th>
+                <td width="140px">
+                    <input type="radio" name="usedfor"> Home
+                </td>
+                <td>
+                    <input type="radio" name="usedfor"> Educational Institution
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="usedfor"> Business
+                </td>
+                <td>
+                    <input type="radio" name="usedfor"> Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="usedfor"> Government
+                </td>
+            </tr>
+            <tr>
+                <th rowspan="2">System(check all that apply):</th>
+                <td>
+                    <input type="checkbox" name="system"> Windows
+                </td>
+                <td>
+                    <input type="checkbox" name="system"> UNIX
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="system"> Macintosh
+                </td>
+                <td>
+                    <input type="checkbox" name="system"> Other
+                </td>
+            </tr>
+            <tr><td colspan="3"><hr></td></tr>
+            <tr>
+                <th>Comments?:</th>
+                <td colspan="2" >
+                    <input name="comments" rows="4" style="width: 100%; height: 140px;"></input>
+                </td>
+            </tr>
+            <tr><td colspan="3" style="text-align: center;"><button>Click to Register</button> <button>Click to Cancel</button></td> </tr>
+        </table>
+    </form>
+</body>
+<style>
+    hr{
+        border: 1px solid black;
+    }
+    td{
+        text-align: left;
+        white-space: nowrap;
+    }
+    th{
+        width: 230px;
+        text-align: left;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+    button{
+         border: 1px solid black;
+    }
+</style>
+
+</html>
