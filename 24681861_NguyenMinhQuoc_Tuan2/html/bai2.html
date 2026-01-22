@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+    <meta name="24681861" content="Nguyen Minh Quoc">
+</head>
+
+<body>
+    <div class="container">
+        <header style="background-image: url(../images/Bai2/background.png); margin: 0;">
+            <table style="margin: 0;">
+                <tr>
+                    <td><img src="../images/Bai2/logo.png" alt=""></td>
+                    <td>
+                        <h1>
+                            YOKO'S KITCHEN
+                        </h1>
+                        <p>JAPANESE COOKING CLASSES</p>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <nav class="menu_header">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Classes</a></li>
+                <li><a href="">Catering</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+
+                <div class="item--img">
+                    <img src="../images/Bai2/image.png" alt="">
+                    <p>Bok choi</p>
+                </div>
+                <div class="item--text">
+                    <h2>Japanese Vegetarian</h2>
+                    <h3>Learn to cook authentic Japanese cuisine</h3>
+                    <p>
+                        Join Yoko's Kitchen and learn to cook authentic Japanese cuisine
+                        with our experienced chefs. Our classes are designed for all skill levels,
+                        from beginners to advanced cooks.
+                    </p>
+                </div>
+
+            </article>
+            <article>
+
+                <div class="item--img">
+                    <img src="../images/Bai2/teriyaki.jpg" alt="">
+                    <p>Teriyaki Sauce</p>
+                </div>
+                <div class="item--text">
+                    <h2>Sauces Masterclass</h2>
+                    <h3>One day workshop</h3>
+                    <p>
+                        An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <h2>Popular Recipies</h2>
+            <ul>
+                <li>Yakitori (grilled chicken)</li>
+                <li>Tsukune (minced chicken patties)</li>
+                <li>Okonomiyaki (savory pancakes)</li>
+                <li>Mizutaki (chicken stew)</li>
+            </ul>
+            <div class="Contact">
+                <h2>Contact</h2>
+                <p>Yoko's Kitchen</p>
+                <p>27 Redchurch Street</p>
+                <p>Shoreditch</p>
+                <p>London E2 7DP</p>
+            </div>
+        </aside>
+        <footer>
+            <address>2011 Yoko's Kitchen</address>
+        </footer>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 80%;
+        border: #877a7a 1px solid;
+    }
+
+    header {
+        width: 100%;
+        min-height: 150px;
+        background-image: url('../images/Bai2/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+    }
+
+    h1 {
+        line-height: 46px;
+    }
+
+    nav {
+        background-color: #877a7a;
+    }
+
+    nav ul {
+        width: 100%;
+        line-height: 30px;
+    }
+
+    nav li {
+        line-height: 24px;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        border-right: 1px solid rgb(255, 255, 255);
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    section {
+        margin: 5px 5px 5px 0;
+        width: 60%;
+        float: left;
+        padding-right: 18px;
+
+        border-right: 1px solid #877a7a;
+    }
+
+
+    section::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    article::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    .item--img {
+        float: left;
+        width: 34%;
+        border-right: #877a7a 1px dashed;
+        padding-right: 15px;
+    }
+    .item--img img {
+        width: 188px;
+        margin-top: 5px;
+    }
+
+    .item--text {
+        float: right;
+        width: 64%;
+    }
+
+    .item--text h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #aaa;
+    }
+
+    .item--text h3 {
+        margin-bottom: 5px;
+        color: hotpink;
+    }
+   
+    aside {
+        margin-top: 5px;
+        margin-right: 5px;
+        width: 38%;
+        color: hotpink;
+        float: right;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    aside li {
+        margin: 0 120px 0 15px;
+        padding:5px 0 8px 0;
+        border-bottom: 0.5px solid hotpink;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .Contact {
+        margin-top: 20px;
+    }
+
+
+    .Contact p {
+        padding:5px 0 0 15px;
+        color: black;
+    }
+
+    footer {
+        width: 100%;
+        margin-top: 10px;
+        border-top: 1px solid black;
+        background-color: #aaa;
+        line-height: 36px;
+        clear: both;
+    }
+</style>
+
+</html>
