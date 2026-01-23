@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     background-color: white;
     padding: 20px;
 }
 
-header h1{
+header h1 {
     height: 50px;
     font-style: italic;
     text-transform: uppercase;
@@ -17,19 +17,20 @@ header h1{
     text-shadow: 5px 10px 3px #fbcdd2;
 }
 
-.header-nav{
+.header-nav {
     background-color: #ed9496;
 }
 
-header{
+header {
     text-align: center;
 }
 
-header ul{
+header ul {
     padding: 5px;
+    padding-right: 30px;
 }
 
-header ul li{
+header ul li {
     list-style-type: none;
     display: inline-block;
     border-right: 2px solid #a65260;
@@ -37,32 +38,128 @@ header ul li{
     width: 150px;
 }
 
-header ul li a{
+header ul li a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.section-nav, aside, article{
+.section-nav,
+article,
+aside {
     float: left;
 }
 
-.section-nav ul li{
+.section-nav ul li {
     background-color: #ed9496;
     list-style-type: none;
     border-radius: 10px;
     margin: 5px
 }
 
-.section-nav ul li a{
+.section-nav ul li a {
     color: white;
     text-decoration: none;
     padding-left: 10px;
 }
 
-.section-nav img{
+.section-nav img {
     width: 200px;
     border-radius: 90%;
     margin-top: 10px;
 }
 
+article h1 {
+    width: 450px;
+    background-color: #ed9496;
+    margin: 5px;
+    margin-left: 200px;
+    padding-left: 20px;
+    letter-spacing: 13px;
+    color: #862934;
+
+}
+
+article ul {
+    padding-left: 40px;
+}
+
+article a {
+    color: red;
+}
+
+article input,
+select {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+article textarea {
+    width: 825px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article input[type="submit"] {
+    width: 60px;
+    height: 30px;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+aside {
+    margin: 5px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+}
+
+aside img {
+    width: 300px;
+}
+
+.event {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.event h2 {
+    margin-top: 20px;
+}
+
+.event p {
+    width: 300px;
+}
+
+.event a {
+    color: white;
+}
+
+footer address {
+    background-color: #ed9496;
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
