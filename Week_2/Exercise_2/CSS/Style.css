@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 50px;
+}
+
+/* Header */
+.logo {
+    background-image: url("../Images/background.png");
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.text h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.text h3 {
+    color: white;
+    font-size: 16px;
+}
+
+.title {
+    background-color: rgb(178, 174, 171);
+}
+
+.title ul {
+    padding: 10px 0;
+}
+
+.title ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px 0 20px;
+}
+
+.title ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.courses {
+    width: 65%;
+}
+
+article {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 290px;
+    height: 190px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.content h1 {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.content h3 {
+    font-size: 16px;
+    color: red;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+/* Aside */
+aside {
+    width: 30%;
+}
+
+aside h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+aside ul {
+    margin-bottom: 20px;
+    color: red;
+}
+
+aside ul li {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-image: url("../Images/background.png");
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: white;
+}
