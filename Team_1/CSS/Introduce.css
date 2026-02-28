@@ -1,0 +1,43 @@
+#gioi_thieu, #tam_nhin, #doi_ngu {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-left: 4px solid #f50294;
+    transition: background-color 0.3s ease;
+}
+
+#gioi_thieu:hover, #tam_nhin:hover, #doi_ngu:hover {
+    background-color: pink;
+}
+
+#gioi_thieu h2, #tam_nhin h2, #doi_ngu h2 {
+    color: #f50294;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#doi_ngu ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 1rem;
+}
+
+#doi_ngu li {
+    background: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#doi_ngu li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #000;
+    color: #f50294;
+    font-weight: bold;
+}

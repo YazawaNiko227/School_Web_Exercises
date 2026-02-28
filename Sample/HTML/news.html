@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="sitemap.html">Sơ đồ</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="login.html">Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Tin tức &amp; Bài viết</h1>
+
+        <div id="news-list" class="grid">
+            <!-- News items loaded by JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const news = storage.get('news') || [];
+        const container = document.getElementById('news-list');
+        container.innerHTML = '';
+        
+        if (news.length === 0) {
+            container.innerHTML = '<p>Không có tin tức</p>';
+            return;
+        }
+        
+        news.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="../IMG/${item.image || 'placeholder.jpg'}" alt="${item.title}">
+                <div class="card-body">
+                    <strong style="color: #ff69b4; font-size: 0.9rem;">${item.date}</strong>
+                    <h3 class="card-title">${item.title}</h3>
+                    <p class="card-text">${item.content}</p>
+                    <a href="news_detail.html?id=${item.id}" class="card-link">Đọc tiếp →</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    });
+    </script>
+</body>
+</html>

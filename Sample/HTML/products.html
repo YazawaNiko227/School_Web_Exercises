@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="cart.html">🛒 Giỏ hàng</a>
+                <a href="login.html">Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Danh sách sản phẩm</h1>
+        
+        <div style="margin-bottom: 2rem;">
+            <label for="category-filter">Lọc theo danh mục:</label>
+            <select id="category-filter" onchange="filterProducts()">
+                <option value="">Tất cả</option>
+                <option value="switches">Switches</option>
+                <option value="routers">Routers</option>
+                <option value="firewalls">Firewalls</option>
+                <option value="access-points">Access Points</option>
+            </select>
+        </div>
+
+        <div id="products-list" class="grid">
+            <!-- Products loaded by JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+    function displayProducts(products) {
+        const container = document.getElementById('products-list');
+        container.innerHTML = '';
+        
+        if (products.length === 0) {
+            container.innerHTML = '<p>Không tìm thấy sản phẩm</p>';
+            return;
+        }
+        
+        products.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="../IMG/${p.image || 'placeholder.jpg'}" alt="${p.name}">
+                <div class="card-body">
+                    <h3 class="card-title">${p.name}</h3>
+                    <p class="card-text">${p.description}</p>
+                    <p class="card-price">$${p.price}</p>
+                    <a href="product_detail.html?id=${p.id}" class="card-link">Xem chi tiết →</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    }
+
+    function filterProducts() {
+        const selectedCategory = document.getElementById('category-filter').value;
+        const products = storage.get('products') || [];
+        
+        if (selectedCategory === '') {
+            displayProducts(products);
+        } else {
+            displayProducts(products.filter(p => p.category === selectedCategory));
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', filterProducts);
+    </script>
+</body>
+</html>

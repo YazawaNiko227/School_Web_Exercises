@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+            </ul>
+            <div class="navbar-right">
+                <a href="cart.html">🛒 Giỏ hàng</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Trang chủ</a> > <a href="products.html">Sản phẩm</a> > <span id="breadcrumb-product">Chi tiết</span>
+        </div>
+
+        <div id="product-detail" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;">
+            <!-- Product details loaded by JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const productId = parseInt(params.get('id'));
+        const products = storage.get('products') || [];
+        const product = products.find(p => p.id === productId);
+        
+        const container = document.getElementById('product-detail');
+        
+        if (!product) {
+            container.innerHTML = '<p>Sản phẩm không tìm thấy</p>';
+            return;
+        }
+        
+        document.getElementById('breadcrumb-product').textContent = product.name;
+        document.title = product.name + ' - Network Equipment Store';
+        
+        container.innerHTML = `
+            <div>
+                <img src="../IMG/${product.image || 'placeholder.jpg'}" alt="${product.name}" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div>
+                <h1>${product.name}</h1>
+                <p><strong>Danh mục:</strong> ${product.category}</p>
+                <p><strong>Mô tả:</strong> ${product.description}</p>
+                <p style="font-size: 1.5rem; color: #ff69b4; font-weight: bold; margin: 2rem 0;">Giá: $${product.price}</p>
+                <p>
+                    <strong>Thông tin chi tiết:</strong><br>
+                    Đây là một sản phẩm chất lượng cao từ nhà cung cấp hàng đầu. 
+                    Được thiết kế cho hiệu suất mạng tối ưu và độ tin cậy cao.
+                </p>
+                <button id="add-to-cart-btn" class="btn btn-primary" onclick="addProductToCart(${product.id})">
+                    Thêm vào giỏ hàng
+                </button>
+                <a href="products.html" class="btn btn-secondary" style="margin-left: 1rem;">Quay lại</a>
+            </div>
+        `;
+    });
+
+    function addProductToCart(productId) {
+        const products = storage.get('products') || [];
+        const product = products.find(p => p.id === productId);
+        if (product) {
+            addToCart(product);
+            alert('Đã thêm vào giỏ hàng!');
+        }
+    }
+    </script>
+</body>
+</html>

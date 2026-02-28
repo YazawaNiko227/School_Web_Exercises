@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm - Muse Network</title>
+    <link rel="stylesheet" href="../CSS/General.css">
+    <link rel="stylesheet" href="../CSS/Products.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="navbar-brand">
+                    <a href="./HomePage.html">
+                        <img src="../IMG/Brand.ico" alt="Brand Logo">
+                        <h1>Muse Network</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="./HomePage.html">Trang chủ</a></li>
+                    <li><a href="./Products.html">Sản phẩm</a></li>
+                    <li><a href="./New.html">Tin tức</a></li>
+                    <li><a href="./Sitemap.html">Sơ đồ</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="nav-cart">
+                        <a href="">
+                            <img src="../IMG/Icon_Cart.png" alt="Cart">
+                            <p>Giỏ hàng</p>
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button>
+                            <img src="../IMG/Icon_Search.png" alt="Search Icon">
+                        </button>
+                    </div>
+                    <div class="nav-auth">
+                        <a href="./Login.html">Đăng nhập</a>
+                        <a href="./Signup.html" class="btn-primary">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="breadcrumb">
+                <a href="./HomePage.html">Trang chủ</a> / <span>Sản phẩm</span>
+            </div>
+
+            <div class="products-wrapper">
+                <aside class="filter-sidebar">
+                    <h3>Bộ lọc</h3>
+                    <div class="filter-group">
+                        <h4>Khoảng giá</h4>
+                        <div class="price-slider">
+                            <input type="range" min="0" max="175000000" step="100000" value="0" class="slider" id="slider-min">
+                            <input type="range" min="0" max="175000000" step="100000" value="175000000" class="slider" id="slider-max">
+                        </div>
+                        <div class="price-values">
+                            <span>0₫</span> - <span>175,000,000₫</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Thương hiệu</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Asus</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Apple</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>DrayTek</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Dell</span>
+                            </label>
+                        </div>
+                        <a href="#" class="see-more">Xem thêm</a>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Loại sản phẩm</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Router</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Switch</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Cáp mạng</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Adapter Wifi</span>
+                            </label>
+                        </div>
+                        <a href="#" class="see-more">Xem thêm</a>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Tình trạng kho</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Còn hàng</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Hết hàng</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Đặt trước</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Chuẩn Wifi</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Wifi 6E</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Wifi 6</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Wifi 5</span>
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span>Wifi 4</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn-reset">Xóa bộ lọc</button>
+                </aside>
+
+                <section class="products-section">
+                    <div class="products-header">
+                        <h2>Tất cả sản phẩm</h2>
+                        <div class="sort-box">
+                            <label>Sắp xếp:</label>
+                            <select>
+                                <option>Mới nhất</option>
+                                <option>Giá: Thấp đến Cao</option>
+                                <option>Giá: Cao đến Thấp</option>
+                                <option>Phổ biến nhất</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Router_1.jpg" alt="Router">
+                                <span class="badge">Sale</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Router Wifi Chuẩn Wifi 7 Asus RT-BE58U</h3>
+                                <div class="rating">★★★★★ (150)</div>
+                                <p class="price">2,990,000₫</p>
+                                <a href="./ProductDetail_Router.html" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <h3>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">4,220,000₫</p>
+                                <a href="./ProductDetail_Switch.html" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                            </div>
+                            <div class="product-info">
+                                <h3>Cáp mạng đầu đúc Cat5e 10m Vention</h3>
+                                <div class="rating">★★★★★ (320)</div>
+                                <p class="price">89,000₫</p>
+                                <a href="./ProductDetail_Cable.html" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Router_1.jpg" alt="Router">
+                            </div>
+                            <div class="product-info">
+                                <h3>Router Wifi 6 TP-Link Archer AX12</h3>
+                                <div class="rating">★★★★☆ (205)</div>
+                                <p class="price">1,890,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <h3>Switch Mạng Gigabit 24 cổng NETGEAR GS724T</h3>
+                                <div class="rating">★★★★★ (178)</div>
+                                <p class="price">3,450,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                                <span class="badge badge-new">Mới</span>
+                            </div>
+                            <div class="product-info">
+                                <h3>Cáp mạng Cat6 UTP 10m TP-Link</h3>
+                                <div class="rating">★★★★☆ (42)</div>
+                                <p class="price">150,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Router_1.jpg" alt="Router">
+                            </div>
+                            <div class="product-info">
+                                <h3>Router Mesh Eero Pro 6E</h3>
+                                <div class="rating">★★★★★ (289)</div>
+                                <p class="price">5,200,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <h3>Switch PoE 48 cổng Cisco SGP250-48P</h3>
+                                <div class="rating">★★★★☆ (156)</div>
+                                <p class="price">6,800,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                            </div>
+                            <div class="product-info">
+                                <h3>Cáp mạng Cat7 SFTP 305m Vention</h3>
+                                <div class="rating">★★★★★ (87)</div>
+                                <p class="price">2,490,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-link">10</a>
+                        <a href="#" class="page-next">Tiếp theo →</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <h3>Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="Introduce.html#gioi_thieu">Giới thiệu</a></li>
+                            <li><a href="Introduce.html#tam_nhin">Tầm nhìn - Sứ mệnh</a></li>
+                            <li><a href="Introduce.html#doi_ngu">Đội ngũ</a></li>
+                            <li><a href="./New.html">Tin tức</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Liên hệ chúng tôi</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Chính sách bảo mật</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Điều khoản sử dụng</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Danh mục sản phẩm</h3>
+                        <ul>
+                            <li><a href="./Products.html">Tất cả sản phẩm</a></li>
+                            <li><a href="#">Router</a></li>
+                            <li><a href="#">Switch</a></li>
+                            <li><a href="#">Cáp mạng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Twitter</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 252525 Muse Network - Mạng của bạn do chúng tôi đảm bảo. Tất cả quyền được bảo vệ. | Thiết
+                        kế bởi nhóm 4</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

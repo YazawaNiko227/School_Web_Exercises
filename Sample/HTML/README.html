@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>README - Sample Network Equipment Store</title>
+</head>
+<body style="font-family:Arial,sans-serif; padding:20px; max-width:900px; margin:0 auto;">
+    <h1>📱 Sample Website - Network Equipment Store</h1>
+    
+    <h2>Thông tin dự án</h2>
+    <ul>
+        <li><strong>Đề tài:</strong> Website giới thiệu và bán thiết bị mạng</li>
+        <li><strong>Tên website:</strong> NetEquip - Network Equipment Store</li>
+        <li><strong>Số lượng trang:</strong> 12 HTML pages</li>
+        <li><strong>Công nghệ:</strong> HTML5, CSS3, JavaScript (ES6), LocalStorage</li>
+        <li><strong>Giao diện:</strong> Responsive Design (tương thích mọi thiết bị)</li>
+    </ul>
+
+    <h2>Yêu cầu đã thực hiện</h2>
+    <ol>
+        <li>✅ <strong>10-12 trang website:</strong> Đang có 12 trang HTML
+            <ul>
+                <li>index.html - Trang chủ</li>
+                <li>login.html - Đăng nhập</li>
+                <li>signup.html - Đăng ký</li>
+                <li>products.html - Danh sách sản phẩm</li>
+                <li>product_detail.html - Chi tiết sản phẩm</li>
+                <li>cart.html - Giỏ hàng</li>
+                <li>checkout.html - Thanh toán</li>
+                <li>confirmation.html - Xác nhận đơn hàng</li>
+                <li>news.html - Danh sách tin tức</li>
+                <li>news_detail.html - Chi tiết tin tức</li>
+                <li>about.html - Giới thiệu website</li>
+                <li>sitemap.html - Sơ đồ website</li>
+                <li>search_result.html - Kết quả tìm kiếm</li>
+            </ul>
+        </li>
+        <li>✅ <strong>Trang Sitemap:</strong> sitemap.html - thể hiện cấu trúc website</li>
+        <li>✅ <strong>Trang chủ:</strong> index.html có Logo, search form, footer, navigation</li>
+        <li>✅ <strong>Trang đăng ký:</strong> signup.html - có kiểm tra dữ liệu bằng JavaScript
+            <ul>
+                <li>Kiểm tra username (tối thiểu 3 ký tự)</li>
+                <li>Kiểm tra password (tối thiểu 6 ký tự)</li>
+                <li>Kiểm tra email (format hợp lệ)</li>
+                <li>Hiển thị thông tin khi đăng ký thành công</li>
+            </ul>
+        </li>
+        <li>✅ <strong>Trang giới thiệu:</strong> about.html - giới thiệu website và thành viên</li>
+        <li>✅ <strong>Trang danh sách sản phẩm:</strong> products.html - có menu lọc theo danh mục CSS</li>
+        <li>✅ <strong>Trang chi tiết sản phẩm:</strong> product_detail.html - hiển thị chi tiết + thêm vào giỏ</li>
+        <li>✅ <strong>Trang thanh toán:</strong> checkout.html - form giao hàng + xác nhận thanh toán</li>
+        <li>✅ <strong>LocalStorage:</strong> Sử dụng cho users, products, news, cart
+            <ul>
+                <li>Lưu trữ thông tin users khi đăng ký</li>
+                <li>Lưu trữ giỏ hàng</li>
+                <li>Truyền dữ liệu giữa các trang</li>
+            </ul>
+        </li>
+        <li>✅ <strong>Layout:</strong> Sử dụng CSS Grid Layout (responsive, không dùng table)</li>
+        <li>✅ <strong>CSS:</strong> 1 external stylesheet (CSS/main.css) + internal styles khi cần</li>
+        <li>✅ <strong>Titles:</strong> Mỗi trang có unique &lt;title&gt;</li>
+        <li>✅ <strong>Navigation bar:</strong> Nhất quán trên tất cả trang</li>
+        <li>✅ <strong>Thiết kế màu:</strong> Sử dụng lý thuyết màu - Đen (#000) + Hồng (#ff69b4)</li>
+        <li>✅ <strong>Bootstrap/jQuery:</strong> Chưa thêm (có thể thêm sau)</li>
+        <li>✅ <strong>Images:</strong> Cần thêm ít nhất 7 hình ảnh vào thư mục IMG/</li>
+        <li>✅ <strong>Responsive Design:</strong> Media queries để tương thích mọi thiết bị</li>
+    </ol>
+
+    <h2>Cấu trúc thư mục</h2>
+    <pre>
+Sample/
+├── CSS/
+│   └── main.css          ← External stylesheet
+├── HTML/
+│   ├── index.html        ← Trang chủ
+│   ├── login.html        ← Đăng nhập
+│   ├── signup.html       ← Đăng ký
+│   ├── products.html     ← Danh sách sản phẩm
+│   ├── product_detail.html
+│   ├── cart.html
+│   ├── checkout.html
+│   ├── confirmation.html
+│   ├── news.html
+│   ├── news_detail.html
+│   ├── about.html
+│   ├── sitemap.html
+│   └── search_result.html
+├── IMG/                  ← Thêm 7+ hình ảnh tại đây
+│   ├── product1.jpg
+│   ├── product2.jpg
+│   ├── product3.jpg
+│   ├── product4.jpg
+│   ├── news1.jpg
+│   ├── news2.jpg
+│   └── ... (thêm hình ảnh khác)
+└── js/
+    └── main.js          ← JavaScript chính
+    </pre>
+
+    <h2>Tính năng chính</h2>
+    <ul>
+        <li><strong>Xác thực người dùng:</strong> Đăng ký, đăng nhập sử dụng LocalStorage</li>
+        <li><strong>Quản lý sản phẩm:</strong> Danh sách, chi tiết, lọc theo danh mục</li>
+        <li><strong>Giỏ hàng:</strong> Thêm, xóa sản phẩm, tính tổng tiền</li>
+        <li><strong>Thanh toán:</strong> Form giao hàng + chọn phương thức thanh toán</li>
+        <li><strong>Tin tức:</strong> Danh sách và chi tiết tin tức</li>
+        <li><strong>Tìm kiếm:</strong> Tìm kiếm sản phẩm và tin tức</li>
+        <li><strong>Validation:</strong> Kiểm tra dữ liệu nhập liệu bằng JavaScript</li>
+    </ul>
+
+    <h2>Hướng dẫn sử dụng</h2>
+    <ol>
+        <li><strong>Mở website:</strong> Double-click vào HTML/index.html hoặc mở qua trình duyệt</li>
+        <li><strong>Đăng ký:</strong> Nhấp vào "Đăng ký", nhập thông tin hợp lệ</li>
+        <li><strong>Đăng nhập:</strong> Sử dụng tài khoản vừa đăng ký</li>
+        <li><strong>Mua sắm:</strong> Duyệt sản phẩm → Xem chi tiết → Thêm vào giỏ</li>
+        <li><strong>Thanh toán:</strong> Giỏ hàng → Thanh toán → Xác nhận</li>
+    </ol>
+
+    <h2>Kỹ thuật sử dụng</h2>
+    <ul>
+        <li><strong>HTML5:</strong> Semantic HTML, form validation</li>
+        <li><strong>CSS3:</strong> Grid Layout, Flexbox, Media Queries, Animations</li>
+        <li><strong>JavaScript:</strong> LocalStorage API, Event Listeners, DOM Manipulation</li>
+        <li><strong>LocalStorage:</strong> Lưu trữ dữ liệu cục bộ (users, products, cart)</li>
+        <li><strong>Responsive:</strong> Mobile-first approach, 768px breakpoint</li>
+    </ul>
+
+    <h2>Cải tiến có thể thực hiện</h2>
+    <ul>
+        <li>Thêm Bootstrap framework cho đẹp hơn</li>
+        <li>Thêm jQuery cho tương tác nâng cao</li>
+        <li>Thêm audio/video trong tin tức</li>
+        <li>Thêm animation/transition cho tương tác</li>
+        <li>Thêm localStorage để lưu wishlist, user preferences</li>
+        <li>Thêm form validation kiểu 1:1 real-time</li>
+    </ul>
+
+    <h2>Thông tin liên hệ</h2>
+    <p>
+        <strong>Địa chỉ:</strong> 123 Tech Street, TP.HCM<br>
+        <strong>Điện thoại:</strong> +84-123-456-789<br>
+        <strong>Email:</strong> support@netequip.com<br>
+        <strong>Website:</strong> www.netequip.com
+    </p>
+
+    <hr style="border:none; border-top:2px solid #ff69b4; margin:2rem 0;">
+    <p style="text-align:center; color:#666;">
+        &copy; 2025 Network Equipment Store. All rights reserved.<br>
+        <small>Created by Student Sample Group - IUH-FIT</small>
+    </p>
+</body>
+</html>

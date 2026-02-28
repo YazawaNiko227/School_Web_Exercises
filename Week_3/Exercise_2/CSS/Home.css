@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background: #4a90e2;
+}
+
+.nav {
+  flex: 3;
+  height: 60px;
+  background: #f39c12;
+}
+
+.search {
+  flex: 1;
+  height: 60px;
+  background: #27ae60;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  background: #ecf0f1;
+}
+
+.contact {
+  flex: 1;
+  background: #3498db;
+}
+
+.info {
+  flex: 1;
+  background: #9b59b6;
+}
+
+.discount {
+  flex: 1;
+  background: #e74c3c;
+}
+
+footer {
+  height: 60px;
+  background: #2c3e50;
+}

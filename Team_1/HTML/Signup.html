@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang mẫu, làm nền tảng để xây dựng các trang web khác</title>
+    <link rel="stylesheet" href="../CSS/General.css">
+    <link rel="stylesheet" href="../CSS/Signup.css">
+</head>
+
+<body>
+    <div class="container">
+       <nav>
+            <div class="nav-wrapper">
+                <div class="navbar-brand">
+                    <a href="./HomePage.html">
+                        <img src="../IMG/Brand.ico" alt="Brand Logo">
+                        <h1>Muse Network</h1>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="./HomePage.html">Trang chủ</a></li>
+                    <li><a href="./Products.html">Sản phẩm</a></li>
+                    <li><a href="./New.html">Tin tức</a></li>
+                    <li><a href="./Sitemap.html">Sơ đồ</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="nav-cart">
+                        <a href="">
+                            <img src="../IMG/Icon_Cart.png" alt="Cart">
+                            <p>Giỏ hàng</p>
+                        </a>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button>
+                            <img src="../IMG/Icon_Search.png" alt="Search Icon">
+                        </button>
+                    </div>
+                    <div class="nav-auth">
+                        <a href="./Login.html">Đăng nhập</a>
+                        <a href="./Signup.html" class="btn-primary">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       <main>
+        <h1>Đăng ký</h1>
+        <h2>Đăng ký bằng tài khoản mạng xã hội</h2>
+        <div class="social-login">
+            <a href="#" class="google">
+                <img src="../IMG/google_logo.webp" alt="Google">
+                <span>Google</span>
+            </a>
+            <a href="#" class="zalo">
+                <img src="../IMG/Zalo_logo.svg.png" alt="Zalo">
+                <span>Zalo</span>
+            </a>
+        </div>
+        <p class="divider">Hoặc điền thông tin sau</p>
+        <form>
+            <div class="input-box">
+                <h2>Thông tin cá nhân</h2>
+                    <div class="form-group">
+                        <label>Họ và tên</label>
+                        <input type="text" required placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="form-group">
+                        <label>Ngày sinh</label>
+                        <input type="date" required placeholder="dd/mm/yy">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại</label>
+                        <input type="tel" required placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" required placeholder="Nhập email">
+                    </div>
+                    <div class="form-group">
+                        <label>Tạo mật khẩu</label>
+                        <input type="text" required placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập lại mật khẩu</label>
+                        <input type="text" required placeholder="Nhập lại mật khẩu của bạn">
+                    </div>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" id="dieukhoan" required>
+                    <label for="dieukhoan">Tôi đồng ý với <a href="#">Điều khoản sử dụng</a> và <a href="#">Chính sách bảo mật của Muse Network</a></label>
+                </div>
+                <div class="button">
+                    <a href="../HTML/Login.html">
+                        Tôi đã có tài khoản
+                    </a>
+                    <button type="submit">Đăng ký</button>
+                </div>
+        </form>
+       </main>
+       <footer>
+            <div class="footer-wrapper">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <h3>Về chúng tôi</h3>
+                        <ul>
+                            <li><a href="Introduce.html#gioi_thieu">Giới thiệu</a></li>
+                            <li><a href="Introduce.html#tam_nhin">Tầm nhìn - Sứ mệnh</a></li>
+                            <li><a href="Introduce.html#doi_ngu">Đội ngũ</a></li>
+                            <li><a href="./New.html">Tin tức</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Liên hệ chúng tôi</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Chính sách bảo mật</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Điều khoản sử dụng</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Danh mục sản phẩm</h3>
+                        <ul>
+                            <li><a href="./Products.html">Tất cả sản phẩm</a></li>
+                            <li><a href="#">Router</a></li>
+                            <li><a href="#">Switch</a></li>
+                            <li><a href="#">Cáp mạng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Facebook</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Twitter</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 252525 Muse Network - Mạng của bạn do chúng tôi đảm bảo. Tất cả quyền được bảo vệ. | Thiết
+                        kế bởi nhóm 4</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

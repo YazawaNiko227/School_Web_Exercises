@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ đồ trang web - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Sơ đồ Websites</h1>
+        <p>Sơ đồ này thể hiện cấu trúc và mối quan hệ giữa các trang trong website.</p>
+
+        <div style="max-width: 800px; background: white; padding: 2rem; border-radius: 8px; border: 1px solid #ddd; margin-top: 2rem;">
+            <h2 style="color: #ff69b4; border-bottom: 2px solid #ff69b4; padding-bottom: 1rem;">Cấu trúc Website</h2>
+            
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>📄 Trang chủ (index.html)</strong>
+                    <p style="margin: 0.5rem 0; color: #666;">Điểm đầu vào của website, hiển thị sản phẩm nổi bật</p>
+                </li>
+
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>👤 Xác thực (Authentication)</strong>
+                    <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                        <li>📄 <a href="login.html">Đăng nhập (login.html)</a></li>
+                        <li>📄 <a href="signup.html">Đăng ký (signup.html)</a></li>
+                    </ul>
+                </li>
+
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>🛍️ Sản phẩm (Shopping)</strong>
+                    <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                        <li>📄 <a href="products.html">Danh sách sản phẩm (products.html)</a>
+                            <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                                <li>📄 <a href="product_detail.html">Chi tiết sản phẩm (product_detail.html)</a></li>
+                            </ul>
+                        </li>
+                        <li>📄 <a href="cart.html">Giỏ hàng (cart.html)</a></li>
+                        <li>📄 <a href="checkout.html">Thanh toán (checkout.html)</a></li>
+                        <li>📄 <a href="confirmation.html">Xác nhận đơn hàng (confirmation.html)</a></li>
+                    </ul>
+                </li>
+
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>📰 Tin tức (News)</strong>
+                    <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                        <li>📄 <a href="news.html">Danh sách tin tức (news.html)</a>
+                            <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                                <li>📄 <a href="news_detail.html">Chi tiết tin tức (news_detail.html)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>ℹ️ Thông tin</strong>
+                    <ul style="margin-top: 0.5rem; list-style: none; padding-left: 1rem;">
+                        <li>📄 <a href="about.html">Giới thiệu (about.html)</a></li>
+                        <li>📄 <a href="search_result.html">Kết quả tìm kiếm (search_result.html)</a></li>
+                    </ul>
+                </li>
+
+                <li style="margin: 1rem 0; padding: 1rem; background: #f9f9f9; border-left: 4px solid #ff69b4;">
+                    <strong>🗂️ Sơ đồ (sitemap.html)</strong>
+                    <p style="margin: 0.5rem 0; color: #666;">Trang này - thể hiện cấu trúc toàn bộ website</p>
+                </li>
+            </ul>
+
+            <div style="margin-top: 2rem; padding: 1rem; background: #fff0f5; border: 1px solid #ffb6c1; border-radius: 4px;">
+                <h3 style="color: #ff69b4;">Thông tin bổ sung</h3>
+                <p><strong>Tổng số trang:</strong> 12 trang HTML</p>
+                <p><strong>Công nghệ:</strong> HTML5, CSS3, JavaScript, LocalStorage</p>
+                <p><strong>Lưu trữ dữ liệu:</strong> IndexedDB / LocalStorage</p>
+                <p><strong>Responsive:</strong> Có - tương thích mọi kích thước màn hình</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

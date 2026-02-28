@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận đơn hàng - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center; color: #ff69b4;">✓ Đơn hàng đã được xác nhận!</h1>
+
+        <div class="alert alert-success" style="max-width: 600px; margin: 2rem auto;">
+            <strong>Cảm ơn bạn đã mua hàng!</strong> Đơn hàng của bạn đã được tiếp nhận và sẽ được xử lý soonest.
+        </div>
+
+        <div style="max-width: 600px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; border: 1px solid #ddd;">
+            <h2>Chi tiết đơn hàng</h2>
+            
+            <div id="order-details">
+                <!-- Order details loaded by JS -->
+            </div>
+
+            <div style="margin-top: 2rem; border-top: 2px solid #ff69b4; padding-top: 1rem;">
+                <p><strong>Số điện thoại hỗ trợ:</strong> +84-123-456-789</p>
+                <p><strong>Email hỗ trợ:</strong> support@netequip.com</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="btn btn-primary">Quay lại trang chủ</a>
+            <a href="products.html" class="btn btn-secondary">Tiếp tục mua sắm</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const order = storage.get('lastOrder');
+        const container = document.getElementById('order-details');
+        
+        if (!order) {
+            container.innerHTML = '<p>Không tìm thấy thông tin đơn hàng</p>';
+            return;
+        }
+        
+        let html = `
+            <p><strong>Tên:</strong> ${order.name}</p>
+            <p><strong>Số điện thoại:</strong> ${order.phone}</p>
+            <p><strong>Địa chỉ:</strong> ${order.address}</p>
+            <p><strong>Email:</strong> ${order.email}</p>
+            <p><strong>Phương thức thanh toán:</strong> ${order.payment}</p>
+            <p><strong>Thời gian:</strong> ${order.date}</p>
+            
+            <h3>Sản phẩm đã đặt mua:</h3>
+            <ul>
+        `;
+        
+        order.items.forEach(item => {
+            html += `<li>${item.name} (${item.quantity || 1}x) - $${item.price * (item.quantity || 1)}</li>`;
+        });
+        
+        html += `
+            </ul>
+            <p style="font-size: 1.2rem; color: #ff69b4; font-weight: bold;">
+                <strong>Tổng tiền:</strong> $${order.total}
+            </p>
+        `;
+        
+        container.innerHTML = html;
+    });
+    </script>
+</body>
+</html>

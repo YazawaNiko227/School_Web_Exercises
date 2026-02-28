@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  display: grid;
+  grid-template-rows: 120px 50px;
+  background: #f39c12;
+}
+
+.banner {
+  background: #d35400;
+}
+
+.menu {
+  background: #27ae60;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background: #ecf0f1;
+  min-height: 500px;
+}
+
+.signup {
+  background: #3498db;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.links {
+  background: #9b59b6;
+}
+
+.moreinfo {
+  background: #e74c3c;
+}
+
+footer {
+  background: #2c3e50;
+  height: 60px;
+}

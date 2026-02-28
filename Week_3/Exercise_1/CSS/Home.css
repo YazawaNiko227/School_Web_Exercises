@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #4a90e2; 
+  position: relative;
+}
+
+nav {
+  width: 70%;
+  height: 40px;
+  background: #f39c12; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  width: 30%;
+  height: 40px;
+  background: #27ae60; 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main {
+  width: 100%;
+  height: 500px;
+  background: #ecf0f1;
+  position: relative;
+}
+
+.form {
+  width: 50%;
+  height: 100%;
+  background: #3498db; 
+  float: left;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+  background: #9b59b6; 
+  float: right;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  height: 60px;
+  background: #2c3e50;
+  position: relative;
+}

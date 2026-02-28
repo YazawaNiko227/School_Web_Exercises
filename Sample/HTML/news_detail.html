@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết tin tức - Network Equipment Store</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">🌐 NetEquip</a>
+            <ul class="navbar-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="news.html">Tin tức</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Trang chủ</a> > <a href="news.html">Tin tức</a> > <span id="breadcrumb-title">Chi tiết</span>
+        </div>
+
+        <div id="news-detail" style="max-width: 800px; margin-top: 2rem;">
+            <!-- News details loaded by JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Network Equipment Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const newsId = parseInt(params.get('id'));
+        const news = storage.get('news') || [];
+        const item = news.find(n => n.id === newsId);
+        
+        const container = document.getElementById('news-detail');
+        
+        if (!item) {
+            container.innerHTML = '<p>Tin tức không tìm thấy</p>';
+            return;
+        }
+        
+        document.getElementById('breadcrumb-title').textContent = item.title;
+        document.title = item.title + ' - Network Equipment Store';
+        
+        container.innerHTML = `
+            <img src="../IMG/${item.image || 'placeholder.jpg'}" alt="${item.title}" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 2rem;">
+            <h1>${item.title}</h1>
+            <p><strong>Ngày đăng:</strong> ${item.date}</p>
+            <p><strong>Danh mục:</strong> ${item.category}</p>
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+            <p>${item.content}</p>
+            <p>Đây là nội dung chi tiết của bài viết. Nội dung này có thể được mở rộng với thêm thông tin, hình ảnh, video, và các chi tiết khác.</p>
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+            <a href="news.html" class="btn btn-secondary">Quay lại tin tức</a>
+        `;
+    });
+    </script>
+</body>
+</html>
