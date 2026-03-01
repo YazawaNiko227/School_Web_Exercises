@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm - Muse Network</title>
+    <title>Sản phẩm - Router</title>
     <link rel="stylesheet" href="../CSS/General.css">
     <link rel="stylesheet" href="../CSS/Products.css">
 </head>
@@ -87,29 +87,6 @@
                     </div>
 
                     <div class="filter-group">
-                        <h4>Loại sản phẩm</h4>
-                        <div class="filter-options">
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Router</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Switch</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Cáp mạng</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Adapter Wifi</span>
-                            </label>
-                        </div>
-                        <a href="#" class="see-more">Xem thêm</a>
-                    </div>
-
-                    <div class="filter-group">
                         <h4>Tình trạng kho</h4>
                         <div class="filter-options">
                             <label class="checkbox-item">
@@ -154,14 +131,13 @@
 
                 <section class="products-section">
                     <div class="products-header">
-                        <h2>Tất cả sản phẩm</h2>
+                        <h2>Tất cả sản phẩm: Router</h2>
                         <div class="sort-box">
                             <label>Sắp xếp:</label>
-                            <select>
-                                <option>Mới nhất</option>
-                                <option>Giá: Thấp đến Cao</option>
-                                <option>Giá: Cao đến Thấp</option>
-                                <option>Phổ biến nhất</option>
+                            <select id="sort-select">
+                                <option value="default">Mặc định</option>
+                                <option value="low-high">Giá: Thấp đến Cao</option>
+                                <option value="high-low">Giá: Cao đến Thấp</option>
                             </select>
                         </div>
                     </div>
@@ -182,97 +158,96 @@
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                                <img src="../IMG/Router_2.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</h3>
+                                <h3>Bộ phát wifi hàng chính hãng bảo hành 24T</h3>
                                 <div class="rating">★★★★☆ (98)</div>
-                                <p class="price">4,220,000₫</p>
-                                <a href="./ProductDetail_Switch.html" class="btn-view">Xem chi tiết</a>
+                                <p class="price">320,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                                <img src="../IMG/Router_3.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng đầu đúc Cat5e 10m Vention</h3>
+                                <h3>Router Draytek Vigor 2915ac - Hàng Chính Hãng</h3>
                                 <div class="rating">★★★★★ (320)</div>
-                                <p class="price">89,000₫</p>
-                                <a href="./ProductDetail_Cable.html" class="btn-view">Xem chi tiết</a>
-                            </div>
-                        </article>
-
-                        <article class="product-card">
-                            <div class="product-image">
-                                <img src="../IMG/Router_1.jpg" alt="Router">
-                            </div>
-                            <div class="product-info">
-                                <h3>Router Wifi 6 TP-Link Archer AX12</h3>
-                                <div class="rating">★★★★☆ (205)</div>
-                                <p class="price">1,890,000₫</p>
+                                <p class="price">3,190,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                                <img src="../IMG/Router_4.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Switch Mạng Gigabit 24 cổng NETGEAR GS724T</h3>
-                                <div class="rating">★★★★★ (178)</div>
-                                <p class="price">3,450,000₫</p>
+                                <h3>Router băng tần kép Totolink A720R AC1200</h3>
+                                <div class="rating">★★★★★ (150)</div>
+                                <p class="price">420,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
-                                <span class="badge badge-new">Mới</span>
+                                <img src="../IMG/Router_5.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng Cat6 UTP 10m TP-Link</h3>
-                                <div class="rating">★★★★☆ (42)</div>
-                                <p class="price">150,000₫</p>
+                                <h3>Router Wifi chuẩn N TP-Link TL-WR844N</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">280,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Router_1.jpg" alt="Router">
+                                <img src="../IMG/Router_6.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Router Mesh Eero Pro 6E</h3>
-                                <div class="rating">★★★★★ (289)</div>
-                                <p class="price">5,200,000₫</p>
+                                <h3>Router Wi-Fi AC1200 TP-Link Archer C6</h3>
+                                <div class="rating">★★★★★ (320)</div>
+                                <p class="price">560,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                                <img src="../IMG/Router_7.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Switch PoE 48 cổng Cisco SGP250-48P</h3>
-                                <div class="rating">★★★★☆ (156)</div>
-                                <p class="price">6,800,000₫</p>
+                                <h3>Router WiFi 2 băng tần AC1200 Gigabit Tenda AC8</h3>
+                                <div class="rating">★★★★★ (150)</div>
+                                <p class="price">600,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                                <img src="../IMG/Router_8.jpg" alt="Router">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng Cat7 SFTP 305m Vention</h3>
-                                <div class="rating">★★★★★ (87)</div>
-                                <p class="price">2,490,000₫</p>
+                                <h3>Router Wifi băng tần kép AC1200 Mercusys MR30G Gigabit</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">420,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Router_9.jpg" alt="Router">
+                            </div>
+                            <div class="product-info">
+                                <h3>Router Wi-Fi Totolink N350RT chuẩn N 300Mbps</h3>
+                                <div class="rating">★★★★★ (320)</div>
+                                <p class="price">270,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
@@ -284,7 +259,7 @@
                         <a href="#" class="page-link">3</a>
                         <span class="page-dots">...</span>
                         <a href="#" class="page-link">10</a>
-                        <a href="#" class="page-next">Tiếp theo →</a>
+                        <a href="#" class="page-next">Tiếp theo →</a>   
                     </div>
                 </section>
             </div>

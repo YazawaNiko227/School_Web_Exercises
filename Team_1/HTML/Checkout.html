@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm - Thiết bị cân bằng tải DrayTek Vigor2927</title>
+    <title>Thanh toán - Muse Network</title>
     <link rel="stylesheet" href="../CSS/General.css">
-    <link rel="stylesheet" href="../CSS/ProductDetail.css">
+    <link rel="stylesheet" href="../CSS/HomePage.css">
+    <link rel="stylesheet" href="../CSS/Checkout.css">
 </head>
 
 <body>
@@ -46,67 +47,86 @@
             </div>
         </nav>
         <main>
-            <div class="product-detail">
-                <div class="breadcrumb">
-                    <a href="./HomePage.html">Trang chủ</a> / <span>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</span>
+            <section class="checkout-container">
+                <div class="checkout-title">
+                    <div class="pink-line"></div>
+                    <h2>Thanh toán đơn hàng</h2>
                 </div>
-                <div class="product-detail-content">
-                    <div class="product-image">
-                        <img src="../IMG/Switch_1.jpg" alt="Thiết bị cân bằng tải DrayTek Vigor2927">
-                    </div>
-                    <div class="product-info">
-                        <h1>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="reviews">(Đánh giá từ 98 khách hàng)</span>
+
+                <form class="checkout-layout">
+                    <div class="checkout-left">
+                        <div class="form-section">
+                            <h3><img src="../IMG/Icon_User.png" alt="" style="width:18px; margin-right:8px;">Thông tin giao hàng</h3>
+                            <div class="input-group">
+                                <input type="text" placeholder="Họ và tên người nhận" required>
+                            </div>
+                            <div class="input-row">
+                                <input type="tel" placeholder="Số điện thoại" required>
+                                <input type="email" placeholder="Email (không bắt buộc)">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Địa chỉ chi tiết (Số nhà, tên đường...)" required>
+                            </div>
+                            <div class="input-group">
+                                <textarea placeholder="Ghi chú đơn hàng..."></textarea>
+                            </div>
                         </div>
-                        <div class="product-price">
-                            <span class="price">4,220,000₫</span>
-                            <span class="stock">Còn hàng</span>
-                        </div>
-                        <div class="product-description">
-                            <h3>Mô tả sản phẩm</h3>
-                            <p>
-                                Thiết bị cân bằng tải DrayTek Vigor2927 (V2927) là một router cân bằng tải chuyên nghiệp 
-                                dành cho các doanh nghiệp vừa và nhỏ. Nó hỗ trợ nhiều kết nối WAN để tối ưu hóa hiệu suất 
-                                mạng và cung cấp dự phòng tự động. Thiết bị này có khả năng xử lý lưu lượng mạng cao và cung cấp 
-                                bảo mật cấp doanh nghiệp.
-                            </p>
-                        </div>
-                        <div class="product-specs">
-                            <h3>Thông số kỹ thuật</h3>
-                            <ul>
-                                <li><strong>Loại thiết bị:</strong> Bộ định tuyến cân bằng tải</li>
-                                <li><strong>Cổng WAN:</strong> 2 cổng Gigabit Ethernet</li>
-                                <li><strong>Cổng LAN:</strong> 4 cổng Gigabit Ethernet</li>
-                                <li><strong>Tốc độ truyền:</strong> Lên đến 1 Gbps</li>
-                                <li><strong>Bộ nhớ:</strong> 256 MB RAM</li>
-                                <li><strong>Bộ lưu trữ:</strong> 16 MB Flash</li>
-                                <li><strong>Bảo mật:</strong> Firewall, VPN, IPS/IDS</li>
-                                <li><strong>Kích thước:</strong> 210 x 150 x 50 mm</li>
-                            </ul>
-                        </div>
-                        <div class="product-actions">
-                            <button class="btn-add-cart">Thêm vào giỏ hàng</button>
-                            <button class="btn-favorite">Yêu thích</button>
+
+                        <div class="form-section payment-methods">
+                            <h3>Phương thức thanh toán</h3>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" checked>
+                                <span class="custom-radio"></span>
+                                Thanh toán khi nhận hàng (COD)
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span class="custom-radio"></span>
+                                Chuyển khoản ngân hàng (QR Code)
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment">
+                                <span class="custom-radio"></span>
+                                Ví điện tử Momo / ZaloPay
+                            </label>
                         </div>
                     </div>
-                </div>
-                <div class="product-tabs">
-                    <h3>Thông tin chi tiết</h3>
-                    <div class="tab-content">
-                        <h4>Đặc điểm nổi bật</h4>
-                        <ul>
-                            <li>Cân bằng tải tự động trên nhiều kết nối WAN</li>
-                            <li>Dự phòng WAN tự động cho tính sẵn sàng cao</li>
-                            <li>Hỗ trợ VPN để kết nối an toàn từ xa</li>
-                            <li>IPS/IDS tích hợp để bảo vệ chống lại các mối đe dọa</li>
-                            <li>Quản lý dễ dàng thông qua giao diện web trực quan</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+                    <aside class="checkout-right">
+                        <div class="order-summary">
+                            <h3>Đơn hàng của bạn</h3>
+                            <div class="summary-list">
+                                <div class="summary-item">
+                                    <span>Router Wifi 7 Asus (x1)</span>
+                                    <span>2,990,000₫</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Cáp mạng Cat5e (x2)</span>
+                                    <span>178,000₫</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="price-row">
+                                <span>Tạm tính:</span>
+                                <span>3,168,000₫</span>
+                            </div>
+                            <div class="price-row">
+                                <span>Phí vận chuyển:</span>
+                                <span class="free-text">Miễn phí</span>
+                            </div>
+                            <div class="price-row total">
+                                <span>Tổng tiền:</span>
+                                <span class="final-price">3,168,000₫</span>
+                            </div>
+                            
+                            <button type="submit" class="btn-checkout">Xác nhận đặt hàng</button>
+                            <a href="./Cart.html" class="back-link">Quay lại giỏ hàng</a>
+                        </div>
+                    </aside>
+                </form>
+            </section>
         </main>
+
         <footer>
             <div class="footer-wrapper">
                 <div class="footer-container">

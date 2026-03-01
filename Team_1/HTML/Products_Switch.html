@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sản phẩm - Muse Network</title>
+    <title>Sản phẩm - Switch</title>
     <link rel="stylesheet" href="../CSS/General.css">
     <link rel="stylesheet" href="../CSS/Products.css">
 </head>
@@ -87,29 +87,6 @@
                     </div>
 
                     <div class="filter-group">
-                        <h4>Loại sản phẩm</h4>
-                        <div class="filter-options">
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Router</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Switch</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Cáp mạng</span>
-                            </label>
-                            <label class="checkbox-item">
-                                <input type="checkbox">
-                                <span>Adapter Wifi</span>
-                            </label>
-                        </div>
-                        <a href="#" class="see-more">Xem thêm</a>
-                    </div>
-
-                    <div class="filter-group">
                         <h4>Tình trạng kho</h4>
                         <div class="filter-options">
                             <label class="checkbox-item">
@@ -154,14 +131,13 @@
 
                 <section class="products-section">
                     <div class="products-header">
-                        <h2>Tất cả sản phẩm</h2>
+                        <h2>Tất cả sản phẩm: Switch</h2>
                         <div class="sort-box">
                             <label>Sắp xếp:</label>
-                            <select>
-                                <option>Mới nhất</option>
-                                <option>Giá: Thấp đến Cao</option>
-                                <option>Giá: Cao đến Thấp</option>
-                                <option>Phổ biến nhất</option>
+                            <select id="sort-select">
+                                <option value="default">Mặc định</option>
+                                <option value="low-high">Giá: Thấp đến Cao</option>
+                                <option value="high-low">Giá: Cao đến Thấp</option>
                             </select>
                         </div>
                     </div>
@@ -169,24 +145,11 @@
                     <div class="product-grid">
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Router_1.jpg" alt="Router">
-                                <span class="badge">Sale</span>
-                            </div>
-                            <div class="product-info">
-                                <h3>Router Wifi Chuẩn Wifi 7 Asus RT-BE58U</h3>
-                                <div class="rating">★★★★★ (150)</div>
-                                <p class="price">2,990,000₫</p>
-                                <a href="./ProductDetail_Router.html" class="btn-view">Xem chi tiết</a>
-                            </div>
-                        </article>
-
-                        <article class="product-card">
-                            <div class="product-image">
                                 <img src="../IMG/Switch_1.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
                                 <h3>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</h3>
-                                <div class="rating">★★★★☆ (98)</div>
+                                <div class="rating">★★★★★ (150)</div>
                                 <p class="price">4,220,000₫</p>
                                 <a href="./ProductDetail_Switch.html" class="btn-view">Xem chi tiết</a>
                             </div>
@@ -194,85 +157,96 @@
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                                <img src="../IMG/Switch_2.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng đầu đúc Cat5e 10m Vention</h3>
+                                <h3>Switch Tenda S108 8 Port</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">147,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Switch_3.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <h3>Switch Gigabit Mercusys MS116GS</h3>
                                 <div class="rating">★★★★★ (320)</div>
-                                <p class="price">89,000₫</p>
-                                <a href="./ProductDetail_Cable.html" class="btn-view">Xem chi tiết</a>
-                            </div>
-                        </article>
-
-                        <article class="product-card">
-                            <div class="product-image">
-                                <img src="../IMG/Router_1.jpg" alt="Router">
-                            </div>
-                            <div class="product-info">
-                                <h3>Router Wifi 6 TP-Link Archer AX12</h3>
-                                <div class="rating">★★★★☆ (205)</div>
-                                <p class="price">1,890,000₫</p>
+                                <p class="price">830,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                                <img src="../IMG/Switch_4.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Switch Mạng Gigabit 24 cổng NETGEAR GS724T</h3>
-                                <div class="rating">★★★★★ (178)</div>
-                                <p class="price">3,450,000₫</p>
+                                <h3>Switch 4 Port Aptek (SF1042P)</h3>
+                                <div class="rating">★★★★★ (150)</div>
+                                <p class="price">1,420,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
-                                <span class="badge badge-new">Mới</span>
+                                <img src="../IMG/Switch_5.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng Cat6 UTP 10m TP-Link</h3>
-                                <div class="rating">★★★★☆ (42)</div>
-                                <p class="price">150,000₫</p>
+                                <h3>Switch TP-Link TL-SG105</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">350,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Router_1.jpg" alt="Router">
+                                <img src="../IMG/Switch_6.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Router Mesh Eero Pro 6E</h3>
-                                <div class="rating">★★★★★ (289)</div>
-                                <p class="price">5,200,000₫</p>
+                                <h3>Switch 8 cổng Gigabit với 7 cổng PoE+ Mercusys MS108GP</h3>
+                                <div class="rating">★★★★★ (320)</div>
+                                <p class="price">620,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Switch_1.jpg" alt="Switch">
+                                <img src="../IMG/Switch_7.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Switch PoE 48 cổng Cisco SGP250-48P</h3>
-                                <div class="rating">★★★★☆ (156)</div>
-                                <p class="price">6,800,000₫</p>
+                                <h3>Switch Tenda S16 10/100Mbs 16 Port</h3>
+                                <div class="rating">★★★★★ (150)</div>
+                                <p class="price">450,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
 
                         <article class="product-card">
                             <div class="product-image">
-                                <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                                <img src="../IMG/Switch_8.jpg" alt="Switch">
                             </div>
                             <div class="product-info">
-                                <h3>Cáp mạng Cat7 SFTP 305m Vention</h3>
-                                <div class="rating">★★★★★ (87)</div>
-                                <p class="price">2,490,000₫</p>
+                                <h3>Switch 8 Port Tenda 10/100M S108 Chính Hãng</h3>
+                                <div class="rating">★★★★☆ (98)</div>
+                                <p class="price">130,000₫</p>
+                                <a href="#" class="btn-view">Xem chi tiết</a>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="../IMG/Switch_9.jpg" alt="Switch">
+                            </div>
+                            <div class="product-info">
+                                <h3>Switch mạng Gigabit 24 cổng Hikvision DS-3E1524-EI</h3>
+                                <div class="rating">★★★★★ (320)</div>
+                                <p class="price">2,190,000₫</p>
                                 <a href="#" class="btn-view">Xem chi tiết</a>
                             </div>
                         </article>
@@ -284,7 +258,7 @@
                         <a href="#" class="page-link">3</a>
                         <span class="page-dots">...</span>
                         <a href="#" class="page-link">10</a>
-                        <a href="#" class="page-next">Tiếp theo →</a>
+                        <a href="#" class="page-next">Tiếp theo →</a>   
                     </div>
                 </section>
             </div>

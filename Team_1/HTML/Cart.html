@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm - Thiết bị cân bằng tải DrayTek Vigor2927</title>
+    <title>Giỏ hàng - Muse Network</title>
     <link rel="stylesheet" href="../CSS/General.css">
-    <link rel="stylesheet" href="../CSS/ProductDetail.css">
+    <link rel="stylesheet" href="../CSS/HomePage.css">
+    <link rel="stylesheet" href="../CSS/Cart.css">
 </head>
 
 <body>
     <div class="container">
-        <nav>
+       <nav>
             <div class="nav-wrapper">
                 <div class="navbar-brand">
                     <a href="./HomePage.html">
@@ -45,68 +46,66 @@
                 </div>
             </div>
         </nav>
+
         <main>
-            <div class="product-detail">
-                <div class="breadcrumb">
-                    <a href="./HomePage.html">Trang chủ</a> / <span>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</span>
+            <section class="cart-page-container">
+                <div class="cart-header">
+                    <h2>Giỏ hàng của bạn</h2>
                 </div>
-                <div class="product-detail-content">
-                    <div class="product-image">
-                        <img src="../IMG/Switch_1.jpg" alt="Thiết bị cân bằng tải DrayTek Vigor2927">
+
+                <div class="cart-content-wrapper">
+                    <div class="cart-items-list">
+                        <article class="cart-item-card">
+                            <img src="../IMG/Router_1.jpg" alt="Router">
+                            <div class="item-details">
+                                <h3>Router Wifi Chuẩn Wifi 7 Asus RT-BE58U</h3>
+                                <p class="item-price">2,990,000₫</p>
+                            </div>
+                            <div class="item-qty">
+                                <input type="number" value="1" min="1">
+                            </div>
+                            <div class="item-subtotal">2,990,000₫</div>
+                            <button class="btn-remove">Xóa</button>
+                        </article>
+
+                        <article class="cart-item-card">
+                            <img src="../IMG/Cable_1.jpg" alt="Cáp mạng">
+                            <div class="item-details">
+                                <h3>Cáp mạng đầu đúc Cat5e 10m Vention</h3>
+                                <p class="item-price">89,000₫</p>
+                            </div>
+                            <div class="item-qty">
+                                <input type="number" value="2" min="1">
+                            </div>
+                            <div class="item-subtotal">178,000₫</div>
+                            <button class="btn-remove">Xóa</button>
+                        </article>
                     </div>
-                    <div class="product-info">
-                        <h1>Thiết bị cân bằng tải DrayTek Vigor2927 (V2927)</h1>
-                        <div class="product-rating">
-                            <span class="stars">★★★★☆</span>
-                            <span class="reviews">(Đánh giá từ 98 khách hàng)</span>
+
+                    <aside class="cart-sidebar">
+                        <div class="summary-box">
+                            <h3>Tóm tắt đơn hàng</h3>
+                            <div class="summary-row">
+                                <span>Tạm tính:</span>
+                                <span>3,079,000₫</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Phí vận chuyển:</span>
+                                <span class="free-ship">Miễn phí</span>
+                            </div>
+                            <hr>
+                            <div class="summary-row total">
+                                <span>Tổng cộng:</span>
+                                <span class="total-price">3,079,000₫</span>
+                            </div>
+                            <a href="./Checkout.html" class="btn-primary btn-checkout">Tiến hành thanh toán</a>
+                            <a href="./HomePage.html" class="btn-back">← Tiếp tục mua sắm</a>
                         </div>
-                        <div class="product-price">
-                            <span class="price">4,220,000₫</span>
-                            <span class="stock">Còn hàng</span>
-                        </div>
-                        <div class="product-description">
-                            <h3>Mô tả sản phẩm</h3>
-                            <p>
-                                Thiết bị cân bằng tải DrayTek Vigor2927 (V2927) là một router cân bằng tải chuyên nghiệp 
-                                dành cho các doanh nghiệp vừa và nhỏ. Nó hỗ trợ nhiều kết nối WAN để tối ưu hóa hiệu suất 
-                                mạng và cung cấp dự phòng tự động. Thiết bị này có khả năng xử lý lưu lượng mạng cao và cung cấp 
-                                bảo mật cấp doanh nghiệp.
-                            </p>
-                        </div>
-                        <div class="product-specs">
-                            <h3>Thông số kỹ thuật</h3>
-                            <ul>
-                                <li><strong>Loại thiết bị:</strong> Bộ định tuyến cân bằng tải</li>
-                                <li><strong>Cổng WAN:</strong> 2 cổng Gigabit Ethernet</li>
-                                <li><strong>Cổng LAN:</strong> 4 cổng Gigabit Ethernet</li>
-                                <li><strong>Tốc độ truyền:</strong> Lên đến 1 Gbps</li>
-                                <li><strong>Bộ nhớ:</strong> 256 MB RAM</li>
-                                <li><strong>Bộ lưu trữ:</strong> 16 MB Flash</li>
-                                <li><strong>Bảo mật:</strong> Firewall, VPN, IPS/IDS</li>
-                                <li><strong>Kích thước:</strong> 210 x 150 x 50 mm</li>
-                            </ul>
-                        </div>
-                        <div class="product-actions">
-                            <button class="btn-add-cart">Thêm vào giỏ hàng</button>
-                            <button class="btn-favorite">Yêu thích</button>
-                        </div>
-                    </div>
+                    </aside>
                 </div>
-                <div class="product-tabs">
-                    <h3>Thông tin chi tiết</h3>
-                    <div class="tab-content">
-                        <h4>Đặc điểm nổi bật</h4>
-                        <ul>
-                            <li>Cân bằng tải tự động trên nhiều kết nối WAN</li>
-                            <li>Dự phòng WAN tự động cho tính sẵn sàng cao</li>
-                            <li>Hỗ trợ VPN để kết nối an toàn từ xa</li>
-                            <li>IPS/IDS tích hợp để bảo vệ chống lại các mối đe dọa</li>
-                            <li>Quản lý dễ dàng thông qua giao diện web trực quan</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
+
         <footer>
             <div class="footer-wrapper">
                 <div class="footer-container">
