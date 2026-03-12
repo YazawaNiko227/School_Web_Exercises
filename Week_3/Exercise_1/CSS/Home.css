@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container{
+    width: 80%;
+
+    margin: 0 auto;
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #6bc9eb, #5da5ef);
+    padding: 5px;
+}
+
+.boundary{
+    height: 20px;
+    background: radial-gradient(circle, white 2px,transparent 2px);
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+    margin-bottom: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+    display: inline-block;  
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+.nav-links li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header h1{
+    color: white;
+    -webkit-text-stroke: 1px darkblue;
+    text-shadow: 0px 0px 5px blue;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+main{
+    display: flex;
+    color: white;
+}
+
+.right, .left{
+    padding-bottom: 30px;
+}
+
+.right{
+    padding-right: 30px;
+}
+
+form{
+    padding-left: 50px;
+}
+
+td{
+    width: 200px;
+}
+
+.form-index{
+    border: blue 2px solid;
+    border-radius: 5px;
+}
+
+.form-button{
+    border: blue 2px dotted;
+    width: 60px;
+    border-radius: 5px;
+}
+
+input{
+    width: 250px;
+}
+
+.left{
+    padding-right: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-information{
+    padding-left: 50px;
+}
+
+.card-information > *{
+    color: blue;
+}
+
+.card-information h1{
+    text-shadow: 2px 2px 1px blue;
+}
+
+.card-img img{
+    width: 400px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
