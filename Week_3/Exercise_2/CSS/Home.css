@@ -1,0 +1,186 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+  background-color: #29507b;
+}
+
+.left-header{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.left-header img{
+  width: 50px;
+}
+
+.brand h1{
+  font-size: 40px;
+}
+
+.right-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav-links{
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li{
+  background-color: #366fab;
+  margin: 20px 0px 0px 10px;
+  padding: 10px;
+}
+
+.nav-links a{
+  color: white;
+  text-decoration: none;
+}
+
+.search input{
+  background-color: #1e3350;
+  border-color: #3a567f;
+  padding: 3px;
+  width: 200px;
+  margin: 0 10px;
+}
+
+.search input::placeholder{
+  color: white;
+}
+
+.search button{
+  background-color: #1e3350;
+  border-color: #3a567f;
+  color: white;
+  padding: 3px;
+}
+
+main{
+  background-color: white;
+  padding: 30px 10px 30px 10px;
+}
+
+.left-main h2{
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted black;
+}
+
+.right-main h2{
+  font-weight: normal;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted black;
+}
+
+.left-content article{
+  color: red;
+  text-shadow: 5px 5px 3px green;
+  font-style: italic;
+}
+
+.left-table td{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.left-table tr{
+  display: flex;
+}
+
+.left-table input, textarea{
+  background-color: #f7f7f7;
+}
+
+.btn-table{
+  margin-top: 20px
+}
+
+.btn-table button{
+  width: 60px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.content{
+  display: flex;
+}
+
+.rc-information p{
+  margin-bottom: 50px;
+}
+
+.right-main{
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-left: 30px;
+  width: 800px;
+  height: 420px;
+}
+
+.right-card img{
+  padding: 3px;
+  border: 1px solid black;
+  width: 300px;
+}
+
+.card-information{
+  margin: 30px 0px 30px 0px;
+}
+
+.right-content{
+  margin: 0px 0px 0px 30px;
+}
+
+main{ 
+  display: flex;
+}
+
+.right-card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-card a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #3a567f;
+  display: flex;
+  padding: 10px;
+}
+
+.footer-p1{
+  color: white;
+}
+
+.footer-p2{
+  color: #6785a8;
+}
