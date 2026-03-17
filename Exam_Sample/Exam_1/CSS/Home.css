@@ -1,172 +1,124 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-html{
-    font-family: 'Times New Roman', Times, serif;
-}
-
 .container{
-    margin: 0 auto;
     width: 80%;
     height: 100vh;
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 header{
     background-image: url(../IMG/baner5.png);
-    height: 200px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 30px;
 }
 
 header h1{
-    margin-bottom: 50px;
-    text-shadow: 3px 3px 2px rgb(184, 96, 44);
+    color: white;
+    font-size: 50px;
 }
 
-menu{
+.menu{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-right: 10px;
+    align-items: center;
 }
 
-.nav-links{
+.nav-menu{
     list-style-type: none;
     display: flex;
 }
 
-.nav-links li{
-    width: 132px;
-    height: 47px; 
-    margin: 1px;
-    box-shadow: 6px 5px 5px rgb(0, 139, 139);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav-links{
+    border: black 1px solid;
+    margin-right: 5px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 3px 3px 5px darkblue;
 }
 
 .nav-links a{
-    text-decoration: none;
     color: green;
-}
-
-.nav-links li:hover{
-    background-color: pink ;
-}
-
-.nav-links a:hover{
-    color: black;
-    font-style: bold;
-    font-size: larger;
-}
-
-.search input{
-    width: 190px;
-    height: 30px;
-    border-radius: 20px;
-    border-color: green;
+    text-decoration: none;
 }
 
 .search button{
-    width: 100px;
-    height: 30px;
+    padding: 5px 20px 5px 20px;
     border-radius: 10px;
+}
+
+.search input{
+    padding: 5px;
+    border-radius: 30px;
 }
 
 main{
     display: flex;
 }
 
-.left{
-    background-color: rgb(211, 247, 247);
-    border-radius: 10px;
-    padding: 5px;
-    margin-right: 5px;
+main h1{
+    color: blue;
+    font-size: x-large;
+    margin-bottom: 10px;
 }
 
-.left article{
-    border: gray 1px solid;
-    box-shadow: 10px 15px 10px gray;
+.section-1 p{
+    border: black 1px solid;
     padding: 10px;
-    margin: 10px;
-    font-style: italic;
-}
-
-.left h1{
-    color: darkblue;
-}
-
-.input-email, .input-tel{
-    width: 248px;
-}
-
-.input-name{
-    width: 500px;
-}
-
-.btn-select{
-    width: 164px;
-}
-
-.input-email, .input-tel, .input-name, .btn-select{
-    border-radius: 20px;
-    height: 25px;
-}
-
-form{
-    padding: 0 50px;
-}
-
-main .btn{
-    width: 500px;
-    text-align: center;   
-}
-
-.btn >*{
-    background-color: rgb(0, 139, 139);
-    color: white;
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-}
-
-.right{
-    width: 1000px;
-    background-color: rgb(251, 237, 219);
-    border-radius: 10px;
+    font-style: italic; 
+    box-shadow: -5px 5px 5px black;
+    background: white;
     margin-left: 10px;
+    margin-bottom: 20px;
 }
 
-.right > h1{
-    margin-left: 20px;
+.left-content{
+    background-color: skyblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
 }
 
-.card h1{
+.button button{
+    background: cadetblue;
     color: white;
-    background-color: rgb(0, 139, 139);
+    padding: 5px 20px 5px 20px
 }
 
-.img-info{
-    display: flex;
-    align-items: center;
-}
-
-.img-info img{
+.right-content img{
     width: 100px;
-    border-radius: 50px;
+    border-radius: 100px;
+}
+
+.right-content{
+    background-color: bisque;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+.card-1, .card-2, .card-3{
+    display: flex;
 }
 
 footer{
-    background-color: rgb(0, 139, 139);
+    background-color: cadetblue;
+    padding: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px 0;
-    color: white;
+    align-items: center;
+}
+
+form input, select{
+    border-radius: 10px;
+}
+
+form{
+    margin-left: 10px;
 }
