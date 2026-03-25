@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Duc Toan">
+    <title>Exercise 1 B</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+
+    <style>
+        .img-fixed {
+            width: 50px;
+        }
+
+        .badge-active {
+            color: green;
+            background-color: rgb(203, 228, 216);
+        }
+
+        .badge-onboarding{
+            color: blue;
+            background-color: #d9e3fc;
+        }
+
+        .badge-awaiting{
+            color: orange;
+            background-color: #fbefdc;
+        }
+
+        .align-item {
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                    <th>Status</th>
+                    <th>Position</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../IMG/7.jpg" alt="" class="rounded-circle img-fixed">
+                            <div class="ms-3">
+                                <span>John Doe</span>
+                                <div class="text-muted">johndoe@gmail.com</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <span>Software engineer</span>
+                        <div class="text-muted">IT department</div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="badge rounded-5 badge-active">Active</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="text-muted">Senior</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <a name="" id="" class="btn text-primary" href="#" role="button">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../IMG/5.jpg" alt="" class="rounded-circle img-fixed">
+                            <div class="ms-3">
+                                <span>Alex Ray</span>
+                                <div class="text-muted">alexray@gmail.com</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <span>Consultant</span>
+                        <div class="text-muted">Finance</div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="badge rounded-5 badge-onboarding">Onboarding</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="text-muted">Junior</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <a name="" id="" class="btn text-primary" href="#" role="button">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="py-3">
+                        <div class="d-flex align-items-center">
+                            <img src="../IMG/3.jpg" alt="" class="rounded-circle img-fixed">
+                            <div class="ms-3">
+                                <span>Kate Hunigton</span>
+                                <div class="text-muted">katehunigton@gmail.com</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <span>Designer</span>
+                        <div class="text-muted">UI/UX</div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="badge rounded-5 badge-awaiting">Awaiting</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <div class="text-muted">Senior</div>
+                        </div>
+                    </td>
+                    <td class="py-3">
+                        <div class="align-item">
+                            <a name="" id="" class="btn text-primary" href="#" role="button">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
