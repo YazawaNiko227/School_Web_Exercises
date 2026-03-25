@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Duc Toan">
+    <title>Exercise week 8</title>
+</head>
+<body>
+  <button onclick="showRandomImages()">Hiển thị ảnh</button>
+  <div>
+    <img id="img1" width="300" style="margin:10px;">
+    <img id="img2" width="300" style="margin:10px;">
+  </div>
+
+  <script>
+    let images = [
+      "../IMG/1.jpg",
+      "../IMG/2.jpg",
+      "../IMG/3.jpg",
+      "../IMG/4.jpg",
+      "../IMG/5.jpg",
+      "https://i.pinimg.com/1200x/62/6f/7a/626f7a6fb2783d8fc2b6066096baa822.jpg",
+      "https://i.pinimg.com/736x/be/34/d2/be34d228da98c322ef8f0d233428c9da.jpg",
+      "https://i.pinimg.com/736x/12/8a/46/128a46335ce1b10ff8fb2ce0da17be9a.jpg",
+      "https://i.pinimg.com/1200x/31/7a/66/317a6670fcfd2358d20708f2ed5d6a57.jpg",
+      "https://i.pinimg.com/736x/89/63/fb/8963fb849ed71239ca0f05878471bec7.jpg"
+    ];
+
+    function showRandomImages() {
+      if (images.length < 2) {
+        alert("Đã hết ảnh để hiển thị!");
+        return;
+      }
+
+      let index1 = Math.floor(Math.random() * images.length);
+      let img1 = images[index1];
+
+      images.splice(index1, 1);
+
+      let index2 = Math.floor(Math.random() * images.length);
+      let img2 = images[index2];
+
+      images.splice(index2, 1);
+
+      document.getElementById("img1").src = img1;
+      document.getElementById("img2").src = img2;
+    }
+  </script>
+</body>
+</html>
