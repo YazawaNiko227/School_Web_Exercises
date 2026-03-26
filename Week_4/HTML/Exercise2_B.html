@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Duc Toan">
+    <title>Exercise 2 B</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <script src="../JS/bootstrap.bundle.js"></script>
+
+    <style>
+        /* Link trong navbar */
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: orange;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: orange;
+        }
+
+        .custom-toggler {
+            background-color: white;
+        }
+
+        .dropdown-menu {
+            background-color: #343a40;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: white;
+        }
+
+        .dropdown-item:hover {
+            background-color: orange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <!-- Ô tìm kiếm -->
+                <form class="d-flex me-auto">
+                    <input type="text" class="form-control me-2" placeholder="Search" />
+                    <button type="submit" class="btn btn-light">Search</button>
+                </form>
+
+                <!-- Nút toggle -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="products-dropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                            <ul class="dropdown-menu" aria-labelledby="products-dropdown">
+                                <li><a href="#" class="dropdown-item">Engineering</a></li>
+                                <li><a href="#" class="dropdown-item">Telecom</a></li>
+                                <li><a href="#" class="dropdown-item">Energy</a></li>
+                                <li><a href="#" class="dropdown-item">Finance</a></li>
+                                <li><a href="#" class="dropdown-item">Consultancy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>
