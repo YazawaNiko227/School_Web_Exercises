@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Duc Toan">
+    <title>Exercise 2 C</title>
+
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+
+    <style>
+        .square_radio {
+            border-radius: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm d-flex justify-content-center">
+        <form action="signup" class="w-50">
+            <table class="table">
+                <tr>
+                    <td class="border-0">
+                        <label for="username" class="form-label">
+                            Username*
+                        </label>
+                    </td>
+                    <td class="border-0">
+                        <label for="company_name" class="form-label">
+                            Company name*
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0">
+                        <input type="text" class="form-control" id="username" placeholder="Choose your username">
+                    </td>
+                    <td class="border-0">
+                        <input type="text" class="form-control" id="company_name" placeholder="Your company name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-0">
+                        <label for="email" class="form-label">
+                            E-mail*
+                        </label>
+                    </td>
+                    <td class="border-0">
+                        <label for="category" class="form-label">
+                            Category*
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0">
+                        <input type="email" class="form-control" placeholder="Your current email address" id="email">
+                    </td>
+                    <td class="border-0">
+                        <input type="text" class="form-control" placeholder="Skills category" id="category">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-0">
+                        <label for="password" class="form-label">
+                            Password*
+                        </label>
+                    </td>
+                    <td class="border-0">
+                        <label for="contact_number" class="form-label">
+                            Contact number*
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0">
+                        <input type="password" id="password" class="form-control" placeholder="Create a password">
+                    </td>
+                    <td class="border-0">
+                        <input type="tel" id="contact_number" class="form-control" placeholder="Provide your number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-0">
+                        <label for="fullname" class="form-label">
+                            Full name*
+                        </label>
+                    </td>
+                    <td class="border-0">
+                        <label for="your_location" class="form-label">
+                            Your location*
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0">
+                        <input type="text" class="form-control" id="fullname"
+                            placeholder="Your first name and last name">
+                    </td>
+                    <td class="border-0">
+                        <input type="text" class="form-control" id="your_location" placeholder="Your pincode and city">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-0">
+                        <label for="gender" class="form-label">
+                            Gender*
+                        </label>
+                    </td>
+                    <td class="border-0">
+                        <div class="form-check">
+                            <input class="form-check-input border-black square_radio" type="radio" id="term" />
+                            <label class="form-check-label" for="term">Agree with the terms and conditions</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-0 d-flex" colspan="2">
+                        <div class="form-check me-2">
+                            <input class="form-check-input border-black" type="radio" id="male" name="gender" />
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input border-black" type="radio" id="female" name="gender" />
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="border-0"></td>
+                    <td class="border-0 d-flex justify-content-end" colspan="2">
+                        <button type="submit" class="btn btn-info text-white">
+                            Signup
+                        </button>
+                        <p class="mx-2">or</p>
+                        <a name="" id="" class="btn btn-primary" href="#" role="button">
+                            Sign up with facebook
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="../JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
