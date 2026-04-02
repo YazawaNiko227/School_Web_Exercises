@@ -73,7 +73,8 @@ main h2 {
     opacity: 0.5;
 }
 main form {
-    width: 650px;
+    max-width: 650px;
+    width: 100%;
     padding: 35px;
     border-radius: 20px;
     background: rgb(255, 255, 255, 0.15);
@@ -167,4 +168,28 @@ main form h2 {
 .button a:hover, .button button:hover {
     background: rgba(255,255,255,0.5);
     transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 24px;
+    }
+    main h2 {
+        font-size: 16px;
+    }
+    main form {
+        padding: 20px;
+        max-width: 100%;
+        width: 95%;
+    }
+    .social-login {
+        grid-template-columns: 1fr;
+    }
+    .button {
+        grid-template-columns: 1fr;
+    }
+    .checkbox-wrap {
+        grid-template-columns: auto 1fr;
+        font-size: 12px;
+    }
 }

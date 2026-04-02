@@ -7,11 +7,12 @@
     <title>Giới thiệu Muse Network</title>
     <link rel="stylesheet" href="../CSS/General.css">
     <link rel="stylesheet" href="../CSS/Introduce.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="container">
-       <nav>
+    <div class="container-fluid">
+       <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="nav-wrapper">
                 <div class="navbar-brand">
                     <a href="./HomePage.html">
@@ -19,29 +20,34 @@
                         <h1>Muse Network</h1>
                     </a>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="./HomePage.html">Trang chủ</a></li>
-                    <li><a href="./Products.html">Sản phẩm</a></li>
-                    <li><a href="./New.html">Tin tức</a></li>
-                    <li><a href="./Sitemap.html">Sơ đồ</a></li>
-                </ul>
-                <div class="nav-right">
-                    <div class="nav-cart">
-                        <a href="./Cart.html">
-                            <img src="../IMG/Icon_Cart.png" alt="Cart">
-                            <p>Giỏ hàng</p>
-                        </a>
-                    </div>
-                    <div class="search-box">
-                        <input type="text" placeholder="Tìm kiếm...">
-                        <button>
-                            <img src="../IMG/Icon_Search.png" alt="Search Icon">
-                        </button>
-                    </div>
-                    <div class="nav-auth">
-                        <a href="./Login.html">Đăng nhập</a>
-                        <a href="./Signup.html" class="btn-primary">Đăng ký</a>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./HomePage.html">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Products.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./New.html">Tin tức</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Sitemap.html">Sơ đồ</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-cart-link" href="./Cart.html">
+                                <img src="../IMG/Icon_Cart.png" alt="Cart">
+                                Giỏ hàng
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="search-box">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button>
+                                    <img src="../IMG/Icon_Search.png" alt="Search Icon">
+                                </button>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./Login.html">Đăng nhập</a></li>
+                        <li class="nav-item"><a class="nav-link btn-primary" href="./Signup.html">Đăng ký</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -111,6 +117,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

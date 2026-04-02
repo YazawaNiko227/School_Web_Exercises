@@ -3,8 +3,7 @@ body {
     background: linear-gradient(135deg, #f50294, #dfd6d8);
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Removed grid-template-columns for Bootstrap responsiveness */
 }
 .left h1 {
     text-transform: uppercase;
@@ -188,4 +187,37 @@ main form > button:hover {
 .signup a:hover {
     text-decoration: underline;
     color: #ffd6ec;
+}
+
+@media (max-width: 991px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+    main form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    main h2 {
+        font-size: 24px;
+    }
+    .left h1 {
+        font-size: 36px;
+    }
+    .slogan p {
+        font-size: 28px;
+    }
+    main form {
+        padding: 20px;
+        max-width: 100%;
+        width: 90%;
+    }
+    .social-login {
+        grid-template-columns: 1fr;
+    }
 }
