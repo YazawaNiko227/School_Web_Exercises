@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Đức Toàn">
+    <title>Homework</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>FORM ĐỊNH DẠNG</h3>
+    
+        <div class="form-row">
+            <span class="label">Họ và tên</span>
+            <input type="text" id="txtHoTen">
+        </div>
+    
+        <div class="form-row">
+            <span class="label">Chọn</span>
+            <input type="radio" name="optDinhDang" value="Background" id="radBg"> <label for="radBg">Background</label>
+            <input type="radio" name="optDinhDang" value="Font" id="radFont"> <label for="radFont">Font</label>
+        </div>
+    
+        <div class="form-row">
+            <span class="label">Chọn màu</span>
+            <select id="selMau">
+                <option value="" >Chọn màu ...</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+            </select>
+        </div>
+    
+        <div class="buttons">
+            <button onclick="doiMau()">Đổi màu</button>
+            <button onclick="lamLai()">Cancel</button>
+        </div>
+    
+        <div id="content" class="content-box">
+            you can direct link the hyperlink with the file if you know the address but this is limited by the browser. eg. if pdf reader is installed on the client then the pdf will not be downloaded instead it will be shown. A good solution would be to have a seperate page for downloading files. just pass filename in querystring and in the pageload event just output the file in response stream.This way you can use url say dwnld.aspx?filename.ext
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

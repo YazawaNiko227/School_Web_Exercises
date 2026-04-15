@@ -1,0 +1,11 @@
+.navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: orange !important;
+        }
+
+        .navbar .nav-link.active {
+            color: orange !important;
+        }

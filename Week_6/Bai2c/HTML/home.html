@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="24741631" content="Phan Đức Toàn">
+    <title>Homework</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>Chon loai cafe :</div>
+        <ul class="cafe-list">
+            <li><input type="checkbox" name="cafe" value="Trung Nguyen"> Trung Nguyen</li>
+            <li><input type="checkbox" name="cafe" value="Me Kong"> Me Kong</li>
+            <li><input type="checkbox" name="cafe" value="New life"> New life</li>
+            <li><input type="checkbox" name="cafe" value="Ocean Blue"> Ocean Blue</li>
+            <li><input type="checkbox" name="cafe" value="Blue Space"> Blue Space</li>
+            <li><input type="checkbox" name="cafe" value="Windows"> Windows</li>
+        </ul>
+    
+        <button onclick="hienThiChon()">Chọn</button>
+    
+        <div class="result-section">
+            Bạn chọn cafe: <span id="displayResult" class="selected-text"></span>
+        </div>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

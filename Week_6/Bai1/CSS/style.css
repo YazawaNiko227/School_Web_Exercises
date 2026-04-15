@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid gray;
+}
+th, td {
+    padding: 8px;
+}
+.title-row {
+    color: #ff66cc; 
+    font-weight: bold;
+    font-size: 1.2em;
+}

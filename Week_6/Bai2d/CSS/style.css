@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    border: 1px solid #337ab7;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+.form-row {
+    margin-bottom: 10px;
+}
+.label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="text"], select {
+    width: 250px;
+    padding: 3px;
+}
+.content-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.buttons {
+    margin-top: 10px;
+}
+button {
+    padding: 5px 15px;
+    cursor: pointer;
+}

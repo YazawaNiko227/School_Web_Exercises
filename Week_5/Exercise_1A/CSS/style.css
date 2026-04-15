@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #222 !important;
+}
+
+.restaurant-section {
+    background-color: #0b3d4d; 
+    flex-grow: 1; 
+    display: flex;
+    align-items: center; 
+    padding: 50px 0;
+}
+
+.main-title {
+    color: white;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.restaurant-img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.btn-pink {
+    background-color: #ff006e !important;
+    color: white !important;
+    width: 200px !important; 
+    padding: 10px 0 !important;
+    border-radius: 5px !important;
+    font-weight: 500 !important;
+    display: inline-block !important;
+}
+
+.btn-outline-light {
+    width: 200px !important; 
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    padding: 10px 0 !important;
+    border-radius: 5px !important;
+    display: inline-block !important;
+}
+
+.description-text {
+    max-width: 400px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.05rem;
+}

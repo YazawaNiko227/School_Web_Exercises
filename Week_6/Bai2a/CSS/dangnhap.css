@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #eeeeee;
+    width: 350px;
+    margin: 20px auto;
+}
+
+table,
+td {
+    border: 1px solid #999;
+}
+
+.header {
+    text-align: center;
+    color: #ff9999;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+    font-family: Arial;
+    font-size: 14px;
+}

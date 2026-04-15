@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: gray;
+}
+
+.custom-navbar {
+    background-color: gray !important;
+}
+
+.custom-navbar .nav-link {
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.hero-magazine-section {
+    background: linear-gradient(135deg, #c0c2ec 0%, #b290ed 100%);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.hero-content h1 {
+    font-size: 6rem;
+    font-weight: 200 !important; 
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    color: #444;
+}
+
+.btn-order {
+    background: transparent !important;
+    color: #000 !important;
+    border: 1.5px solid #000 !important; 
+    border-radius: 50px;
+    padding: 10px 45px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+
+
+.magazine-img-wrapper img {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1); 
+    border-radius: 0; 
+}

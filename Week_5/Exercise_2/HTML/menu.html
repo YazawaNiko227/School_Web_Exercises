@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Menu</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="24741631" content="Phan Duc Toan">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="bg-black">
+        <div class="container w-75">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container d-flex align-items-center py-3">
+
+                    <a class="navbar-brand" href="#">Feane</a>
+
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-3"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link active" href="menu.html">Menu</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item mx-3"><a class="nav-link" href="book.html">Book Table</a></li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <i class="bi bi-person text-white"></i>
+                        <i class="bi bi-cart text-white"></i>
+                        <i class="bi bi-search text-white"></i>
+                        <button class="btn btn-warning rounded-pill px-4" data-bs-toggle="modal"
+                            data-bs-target="#modalId">Order Online</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container w-75">
+        <div class="d-flex justify-content-center mt-5 pt-5">
+            <div>
+                <h1 class="ms-5 ps-5">Our Menu</h1>
+                <ul class="nav nav-pills my-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active bg-dark rounded-pill px-4" href="#">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black px-4" href="#">Burger</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black px-4" href="#">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black px-4" href="#">Pasta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black px-4" href="#">Fries</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="bg-light d-flex justify-content-center py-4">
+                        <img src="../img/f1.png" style="width: auto; height: 170px;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-white" style="background-color: #222831;">
+                        <h5 class="card-title">Delicious Pizza</h5>
+                        <p class="card-text">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                            magnam voluptatem repellendus sed eaque</p>
+                        <div class="d-flex justify-content-between mt-4">
+                            <p href="#" class="card-link">$20</p>
+                            <i class="bi bi-cart text-white bg-warning rounded-circle p-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="bg-light d-flex justify-content-center py-4">
+                        <img src="../img/f2.png" style="width: auto; height: 170px;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-white" style="background-color: #222831;">
+                        <h5 class="card-title">Delicious Pizza</h5>
+                        <p class="card-text">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                            magnam voluptatem repellendus sed eaque</p>
+                        <div class="d-flex justify-content-between mt-4">
+                            <p href="#" class="card-link">$20</p>
+                            <i class="bi bi-cart text-white bg-warning rounded-circle p-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="bg-light d-flex justify-content-center py-4">
+                        <img src="../img/f3.png" style="width: auto; height: 170px;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-white" style="background-color: #222831;">
+                        <h5 class="card-title">Delicious Pizza</h5>
+                        <p class="card-text">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit,
+                            magnam voluptatem repellendus sed eaque</p>
+                        <div class="d-flex justify-content-between mt-4">
+                            <p href="#" class="card-link">$20</p>
+                            <i class="bi bi-cart text-white bg-warning rounded-circle p-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-warning" id="modalTitleId">
+                        Order
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                            placeholder="" />
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="" id="" />
+                        <label class="form-check-label" for=""> Check me out </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning text-black" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-warning text-black">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+
+
+
+
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
