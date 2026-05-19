@@ -1,0 +1,42 @@
+Trang chủ
+Giới thiệu
+	Khoá học
+	Trang Web
+Đăng ký
+
+DANH SÁCH HỌC VIÊN
+
+<td>STT</td>
+<td>Họ và tên</td>
+<td>Ngày sinh</td>
+<td>Giới tính</td>
+<td>Ngôn ngữ</td>
+<td>Số điện thoại</td>
+<td>Email</td>
+<td>Khoá học</td>
+<td>Học phí</td>
+<td>Ảnh đại điện</td>
+
+<td>1</td>
+<td>Pham Thanh Phong</td>
+<td>19/01/1999</td>
+<td>Nam</td>
+<td>Tiếng Việt</td>
+<td>0123-456-789</td>
+<td>tung.99_pham@gmail.com</td>
+<td>trí tuệ nhân tạo</td>
+<td>4,000,000</td>
+<td>default-avatar.png</td>
+
+Copyright &copy; 2026 by Tung-PT
+Họ và tên sinh viên
+Mã số sinh viên
+Mã lớp
+
+THÔNG TIN ĐĂNG KÝ
+
+-- Chọn khoá học --	Học phí
+Trí tuệ nhân tạo	4000000
+Học máy			3500000
+Học sâu			3000000
+Dữ liệu lớn		2500000

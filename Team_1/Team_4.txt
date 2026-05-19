@@ -1,0 +1,7 @@
+1. Số nhóm: 4
+2. Mã đề tài: 17
+3. Tên đề tài: Website giới thiệu, bán thiết bị mạng trực tuyến
+4. Họ và tên nhóm trưởng: Phan Đức Toàn
+5. MSSV nhóm trưởng: 24741631
+6. Link github: https://github.com/YazawaNiko227/School_Web_Exercises/tree/main/Team_1
+7. Link website: https://yazawaniko227.github.io/School_Web_Exercises/Team_1/HTML/HomePage.html
