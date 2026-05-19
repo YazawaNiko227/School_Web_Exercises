@@ -80,7 +80,6 @@ $(document).ready(function(){
         } else {
             $('#errKhoaHoc').text('');
         }
-        hocPhi = $("#sltKhoaHoc").val();
 
         let regexAnh = /\.(jpg|png|gif)$/i;
         if(!anhDaiDien){
